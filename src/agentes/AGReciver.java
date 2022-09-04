@@ -48,7 +48,7 @@ public class AGReciver extends Agent {
             datosGUI[3] = main.gui.Stops.getSelectedItem().toString();
             datosGUI[4] = main.gui.Months.getSelectedItem().toString();
             datosGUI[5] = main.gui.Day.getSelectedItem().toString();
-            datosGUI.toString();
+            
             main.gui.Airline.setName("Not selected");
             main.gui.Source.setName("Not selected");
             main.gui.Destination.setName("Not selected");
@@ -66,7 +66,7 @@ public class AGReciver extends Agent {
             String idC = msj.getConversationId();
             if (idC.equalsIgnoreCase("CODModel")) {
 
-                main.gui.setVisible(true);
+                
             }
         }
 

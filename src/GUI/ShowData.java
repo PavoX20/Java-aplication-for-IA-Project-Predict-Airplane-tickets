@@ -33,7 +33,7 @@ public class ShowData extends javax.swing.JFrame {
 
         jTextField1.setText("jTextField1");
 
-        setMinimumSize(new java.awt.Dimension(566, 280));
+        setMinimumSize(new java.awt.Dimension(575, 280));
 
         TextShowData.setEditable(false);
         TextShowData.setColumns(20);
@@ -45,11 +45,11 @@ public class ShowData extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 560, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 575, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 317, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 253, Short.MAX_VALUE)
         );
 
         pack();
