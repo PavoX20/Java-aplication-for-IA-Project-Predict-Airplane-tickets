@@ -53,7 +53,7 @@ public class AGModel extends Agent {
                         BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
                         
                         String resultado = null;
-                        String prediccion[] = new String[11];
+                        String prediccion[] = new String[12];
                         int i = 0;
                         while ((resultado = reader.readLine()) != null) {
                             prediccion[i] = resultado;
@@ -63,6 +63,8 @@ public class AGModel extends Agent {
                         
                         double value1= Math.round(Double.parseDouble(prediccion[4])*100.0)/100.0;
                         double value2= Math.round(Double.parseDouble(prediccion[5])*100.0)/100.0;
+                        double value3= Math.round(Double.parseDouble(prediccion[6])*100.0)/100.0;
+                        mostrar+="(KNN) Predicted Airline ticket with "+ j+ " hours of flight duration is:" + value3 +"$\n";
                         mostrar+="(SVR) Predicted Airline ticket with "+ j+ " hours of flight duration is:" + value1 +"$\n";
                         mostrar+="(ANN) Predicted Airline ticket with "+ j+ " hours of flight duration is:" + value2 +"$\n\n";
                         main.showdata.TextShowData.setText(mostrar);
